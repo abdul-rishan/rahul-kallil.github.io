@@ -1,0 +1,211 @@
+---
+layout: post
+excerpt: Meet my publication
+permalink: /Sentiment-Analysis-On-Twitter-Data-Theory-and-Practice
+published: true
+images:
+  - url: /assets/Cover11th.png
+---
+
+<p><strong>SENTIMENT ANALYSIS ON TWITTER DATA: THEORY AND PRACTICE</strong></p>
+<p><strong><strong>RAHUL R KALLIL</strong></strong></p>
+<p><strong><strong>RJ College of Arts, Science and Commerce</strong></strong></p>
+<p>rahulkallil2@gmail.com</p>
+<p><strong><strong>&nbsp;</strong></strong></p>
+<p><strong><strong>ABSTRACT</strong></strong></p>
+<p>This paper focuses on analysis of Twitter data, which include sentiment analysis for the tweets posted in Twitter. Social networks are the main resources to gather information about people&rsquo;s opinion and sentiments towards different topics as they spend hours daily on social media and share their opinion.</p>
+<p>There has been lot of work in the field of sentiment analysis of twitter data.</p>
+<p>In this paper, we provide a survey and a comparative analyses of existing techniques for opinion mining like machine learning and lexicon-based approaches,</p>
+<p>Using various machine learning algorithms like Naive Bayes, we provide research on twitter data streams.</p>
+<p><span style="text-decoration: line-through;">&nbsp;</span></p>
+<p><strong><em><strong><em>Keywords</em></strong></em></strong><strong><strong>:</strong></strong> Opinion Mining, Text Mining, Social Media, Sentiment Analysis, Twitter</p>
+<p>&nbsp;</p>
+<p><strong><strong>INTRODUCTION</strong></strong></p>
+<p>Social media platform as the data source are categorize into three general categories: blogs, micro-blogging sites, and review site [12-15]. Among these categories, Twitter, a microblogging site is highly popular with over 500 million users around the world.</p>
+<p>It allows users to use a short text within a limit of 140 characters as their posts (also called <strong><strong>tweets</strong></strong>). Twitter sees a daily stream of more than 400 million tweets.</p>
+<p>&nbsp;</p>
+<p>These tweets include from remaining socially connected to their friends, family members and co-workers, to updates of wider interest about current affairs, encompassing all kinds of information.</p>
+<p>The topics of these tweets range widely from the simple, such as &ldquo;what I&rsquo;m doing right now,&rdquo; to the thematic, such as &ldquo;football games&rdquo;.</p>
+<p>Twitter also categorizes tweets and trends according to region and on its web interface it displays the most recent tweets as feeds.</p>
+<p>&nbsp;</p>
+<p>As a social-networking service, Twitter features two social models called &ldquo;following&rdquo; and &lsquo;Hashtags&rsquo;. Following is a model wherein a user is allowed to choose any other users that she wants to follow. The one she follows is her friend, and she is the follower. A follower can follow any user without any permission or reciprocating by following her back. A follower receives all the updates of her friends [4].</p>
+<p>&nbsp;</p>
+<p>Users can also add tags for the tweets. On Twitter the tag is called &ldquo;hashtag&rdquo;, and begins with sign &ldquo;#&rdquo;. Hash &lsquo;#&rsquo;, followed by the trend-name, is to identify and group tweets about a particular trending topic. The Hashtags generally are telegram style word(s) description without spaces and attempts to summarize the trend.</p>
+<p>Different types of tweets and hashtags make Twitter data stream more readable.</p>
+<p>Twitter also provides its data in the form of API for developers to create applications that require data gathered by tweets and trends.</p>
+<p>&nbsp;</p>
+<p>There are three types of tweets: reply, retweet and normal tweet. Reply is a message to any user with the sign &ldquo;@&rdquo; followed by the target user's name at the beginning of the tweet. Retweet is a message which user shares from friends to her followers which begins with the sign &ldquo;RT&rdquo;. Normal tweet are the tweets except replies and retweets.</p>
+<p>&nbsp;</p>
+<p>In this section, we provide background on Twitter relevant to this work, describing the syntax utilized by its users, and the way they interact with each other and spread information. Then, we get into detail of how Twitter presents and deals with trends (defined as <em><em>trending topics </em></em>by the microblogging system), which we utilize as the input to our trend classifier and understand the sentiment of the trending tweets.</p>
+<p>&nbsp;</p>
+<p>Sentiment analysis (SA) tells user whether the information about the product is satisfactory or not before they buy it.</p>
+<p><strong><strong>&nbsp;</strong></strong></p>
+<p><strong><strong>&nbsp;</strong></strong></p>
+<p><strong><strong>&nbsp;</strong></strong></p>
+<p><strong><strong>&nbsp;</strong></strong></p>
+<ol start="2">
+<li><strong><strong> REVIEW AND DISCUSSION</strong></strong></li>
+</ol>
+<p><strong><em><strong><em>Sentiment Analysis</em></strong></em></strong></p>
+<p>Sentiment analysis can be defined as a process that automates mining of attitudes, opinions, views and emotions from text, speech, tweets and database sources through Natural Language Processing (NLP). Sentiment analysis involves classifying opinions in text into categories like "positive" or "negative" or "neutral".</p>
+<p><strong><strong>&nbsp;</strong></strong></p>
+<p>Pak and Paroubek(2010)&nbsp; proposed a model to classify the tweets as objective, positive and negative. They created a twitter corpus by collecting tweets using Twitter API. Using that corpus, they developed a sentiment classifier based on the multinomial Naive Bayes method that uses features like N-gram and POS-tags. The training set they used was less efficient since it contains only tweets having emoticons.</p>
+<p><strong><strong>&nbsp;</strong></strong></p>
+<p>Parikh and Movassate(2009) &nbsp;implemented two models, a Naive Bayes bigram model and a Maximum Entropy model to classify tweets. They found that the Naive Bayes classifiers worked much better than the Maximum Entropy model.</p>
+<p>&nbsp;</p>
+<p>Go and L.Huang (2009) proposed a solution for sentiment analysis for twitter data by using distant supervision, in which they build models using Naive Bayes, Maximum Entropy and Support Vector Machines (SVM). Their feature space consisted of unigrams, bigrams and POS. They concluded that SVM outperformed other models and that unigram were more effective as features.</p>
+<p>&nbsp;</p>
+<ol start="3">
+<li><strong><strong> APPROACHES FOR SENTIMENT ANALYSIS </strong></strong></li>
+</ol>
+<p>&nbsp;</p>
+<p>Opinion mining (sentiment extraction) is employed on Twitter posts by means of following techniques</p>
+<ol>
+<li>Lexical analysis</li>
+<li>Machine learning based analysis</li>
+</ol>
+<p>&nbsp;</p>
+<p><strong><em><strong><em>3.1 Lexical analysis</em></strong></em></strong></p>
+<p>The input text is converted to tokens by the Tokenizer. Every new token encountered is then matched for the lexicon in the dictionary. If there is a positive match, the score is added to the total pool of score for the input text. For instance if &ldquo;dramatic&rdquo; is a positive match in the dictionary then the total score of the text is incremented. Other-wise the score is decremented or the word is tagged as negative.</p>
+<p>&nbsp;</p>
+<p><strong><em><strong><em>3.2 Machine learning based analysis</em></strong></em></strong></p>
+<p>Following are the phases required for sentiment analysis of twitter data:</p>
+<p><strong><em><strong><em>3.2.1 Data Collecting</em></strong></em></strong> &ndash; There are three possible ways to collect Twitter data for research as follows.</p>
+<ul>
+<li>Application Program Interfaces (APIs): Twitter provides two types of APIs such as search API and stream API</li>
+<li>Data repositories such as UCI, Friendster, Kdnuggets, and SNAP, Kaggle</li>
+<li>Start with downloading and caching the sentiment dictionary &amp; Download twitter testing data sets, input it in to the program.</li>
+</ul>
+<p>&nbsp;</p>
+<p>The link to download the dataset from Stanford development program:</p>
+<p>http://cs.stanford.edu/people/alecmgo/trainingandtestdata.zip</p>
+<p>This data consists of 4 million tweets categorized as positive and negative.</p>
+<p>&nbsp;</p>
+<p><strong><em><strong><em>3.2 Pre-processing</em></strong></em> </strong>&ndash; The collected data is raw data. In order to apply classifier it is necessary to pre-process the raw data. In this stage, the acquired data is cleaned and made ready for feeding it into the classifier. Cleaning includes extraction of keywords and symbols. For instance &ndash; Emoticons are the smiley used in textual form to represent emotions e.g. &ldquo;:-)&rdquo;, &ldquo;:)&rdquo; etc and Removing retweets:</p>
+<p>Many of the tweets were the same; they were what Twitter calls a `retweet'. Since a retweet does not take as much thought as an original tweet we decided to remove the retweets as to prevent a bias in the data. If several columns in our term document matrix were identical, we removed all but one of those columns.</p>
+<p>&nbsp;</p>
+<p>The pre-processing task involves:</p>
+<ol>
+<li>Decompress slang words (Omg for Oh my God, ttyl for Talk to you later)</li>
+<li>Make the case uniform(either lowercase or Uppercase)</li>
+<li>Remove un-necessary white spaces and tabs</li>
+<li>Remove retweets</li>
+<li>Remove all URLs (e.g. www.xyz.com), hash tags (e.g. #topic), targets (@username)</li>
+<li>Correct the spellings; sequence of repeated characters is to be handled</li>
+<li>Replace all the emoticons with their sentiment.</li>
+<li>Remove all punctuations, symbols, numbers</li>
+<li>Remove Stop Words</li>
+<li>Expand Acronyms (we can use an acronym dictionary)</li>
+<li>Remove Non-English Tweets</li>
+</ol>
+<p><strong><strong>3.3 Training Data </strong></strong>&ndash;</p>
+<p>In the training data, a collection of tagged corpora is provided.. Training the classifier makes it easier for future predictions for unknown data. We can figure out</p>
+<p><em><em>Words And Their Frequencies, Parts Of Speech Tags ,Opinion Words And Phrases , Position Of Term, Negation </em></em></p>
+<p>&nbsp;</p>
+<p><strong><em><strong><em>Features:</em></strong></em></strong></p>
+<p>Generally, unigrams (single word phrases), bi-grams (two consecutive phrases), tri-grams (three consecutive phrases) are selected as feature vectors. There are a variety of proposed features namely number of positive words, number of negative words,</p>
+<p>&nbsp;</p>
+<p>A hand-tagged collection of data is prepared by most commonly used crowd-sourcing method. This data is the fuel for the classifier; it will be fed to the algorithm for learning purpose.</p>
+<p>&nbsp;</p>
+<p><strong><em><strong><em>3.4 Classification</em></strong></em> </strong>&ndash; This is the heart of the whole technique. Depending upon the requirement of the application SVM or Na&iuml;ve Bayes is deployed for analysis. The classifier (after completing the training) is ready to be deployed to the real time tweets/text for sentiment extraction purpose.</p>
+<p>&nbsp;</p>
+<p><strong><em><strong><em>3.5 Results</em></strong></em> </strong>&ndash; Results are plotted based on the type of representation selected i.e. charts, graphs, etc. Performance tuning is done prior to the release of the algorithm</p>
+<p>Accuracy is reported to vary from 63% to 80% depending upon the combination of various features selected.</p>
+<p>&nbsp;</p>
+<ol start="4">
+<li><strong><strong> METHODOLOGY AND RESULTS</strong></strong></li>
+</ol>
+<p>In this paper, we used python to implement sentimental analysis. Some packages have utilized including <em><em>tweepy </em></em>and <em><em>textblob</em></em>. We can install the required libraries by following commands:</p>
+<ul>
+<li>pip install tweepy</li>
+<li>pip install textblob</li>
+</ul>
+<p>The second step is downloading the dictionary by running the following command:</p>
+<p><em><em>python -m textblob.download_corpora.</em></em></p>
+<p>The textblob is a python library for text processing and it uses NLTK for natural language processing [6]. Corpora is a large and structured set of texts which we need for analyzing tweets.</p>
+<p>&nbsp;</p>
+<ol start="5">
+<li>5<strong><strong>. RESULTS AND DISCUSSION </strong></strong></li>
+</ol>
+<p>&nbsp;</p>
+<p>The twitter dataset is publicly made available by Stanford University. Analyses were done on this labelled datasets using various feature extraction technique. We used the framework where the pre-processor is applied to the raw sentences which make it more appropriate to understand. Further, the different machine learning techniques trains the dataset with feature vectors and then the semantic analysis offers a large set of synonyms and similarity which provides the polarity of the content.</p>
+<p>&nbsp;</p>
+<p>Table 1: Negative and Positive sentiment score of Training data</p>
+<p>&nbsp;</p>
+<p>Following are the details on most informative features after the classifier is executed on train data.</p>
+<p>sad = &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; True &nbsp;&nbsp;&nbsp; &nbsp;neg : pos = 37.6 : 1.0</p>
+<p>worst = &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; True&nbsp;&nbsp;&nbsp;&nbsp; neg :pos = 32.4 : 1.0</p>
+<p>crying = &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; True &nbsp;&nbsp;&nbsp; &nbsp;neg : pos = 24.7 : 1.0</p>
+<p>fml = &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; True&nbsp;&nbsp;&nbsp;&nbsp; neg : pos = 24.1 : 1.0</p>
+<p>hurts = &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; True &nbsp;&nbsp;&nbsp;&nbsp;neg : pos = 21.2 : 1.0</p>
+<p>awful = &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; True &nbsp;&nbsp;&nbsp;&nbsp;neg : pos = 21.1 : 1.0</p>
+<p>ugh. = &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; True &nbsp;&nbsp;&nbsp;&nbsp;neg :pos = 20.4 : 1.0</p>
+<p>&nbsp;</p>
+<p><strong><em><strong><em>Effect of Stop words </em></strong></em></strong></p>
+<p>When Naive Bayes was run, it gave an accuracy of 73.65 percent, which is considered as the baseline result.</p>
+<p>When stop words were removed and Naive Bayes was run, it gave an accuracy of &nbsp;74.56 percent. Following table shows the accuracy obtained at different sizes for the Na&iuml;ve Bayes with stop words removed and using pre-processed data and based on unigram model.</p>
+<p>sad = &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; True neg : pos = 27.6 : 1.0</p>
+<p>awful = &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; True neg : pos = 20.3 : 1.0</p>
+<p>ugh = &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; True neg : pos = 19.3 : 1.0</p>
+<p>poor = &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; True neg : pos = 19.3 : 1.0</p>
+<p>sucks = &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; True neg : pos = 18.7 : 1.0</p>
+<p>upset = &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; True neg : pos = 18.0 : 1.0</p>
+<p>argh = &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; True neg : pos = 17.3 : 1.0</p>
+<p>battery = &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; True neg : pos = 16.6 : 1.0</p>
+<p>&nbsp;</p>
+<p>This shows that stop words really affect the predictions. Thus removal of stop words makes a lot of difference to the accuracy.</p>
+<p>&nbsp;</p>
+<p><strong><em><strong><em>Effect of Bigram: </em></strong></em></strong></p>
+<p>Bigram uses a combination of two words as a feature. Bigram effectively captures some features in the data that unigram fails to capture. For example, words like ‟not sad‟, ‟not good‟ clearly say that the sentiment is negative. This effect can be clearly seen from the increase in accuracy from 74.56(Unigram) to 76.44 percent which is almost a 2% increase.</p>
+<p>&nbsp;</p>
+<p>The most informative features for Naive Bayes with Bigrams as features:</p>
+<p>('so', 'sad') = &nbsp;&nbsp; True neg :pos = 55.2 : 1.0</p>
+<p>sad. = &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; True neg :pos = 44.2 : 1.0</p>
+<p>('i', 'lost') = &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;True neg :pos = 24.7 : 1.0</p>
+<p>('miss', 'him') = True neg :pos = 24.1 : 1.0</p>
+<p>&nbsp;</p>
+<p><strong><em><strong><em>Effect of using Trigram</em></strong></em></strong><em><em>. </em></em></p>
+<p>Running Na&iuml;ve Bayes using Trigrams, bigrams and unigrams together gave an accuracy of 75.41 percent which is less than the accuracy obtained when Bigrams were used as a feature.</p>
+<p>Hence for further analysis, the trigrams are not considered as they do not have a notice able impact on the accuracy.</p>
+<p>&nbsp;</p>
+<p>The most informative features for Naive Bayes with Trigrams as features.:</p>
+<p>('so', 'sad') = &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; True neg :pos = 59.1 : 1.0</p>
+<p>('lost', 'my') = &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; True neg :pos = 38.9 : 1.0</p>
+<p>('i', 'miss', 'my') = &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; True neg :pos = 36.9 : 1.0</p>
+<p>('going', 'to', 'miss') = &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; True neg :pos = 28.5 : 1.0</p>
+<p>('happy', "mother's", 'day') = &nbsp;True pos :neg = 25.0 : 1.0</p>
+<p>&nbsp;</p>
+<p>Table 2. Accuracy of Naive Bayes Algorithm</p>
+<p>&nbsp;</p>
+<p><strong><strong>CONCLUSION</strong></strong></p>
+<p>In a survey conducted by [6], comparison of all approaches has showed that best results have been observed from machine learning approaches, and least by lexical approaches. However, without any proper training of a classifier in machine learning approach results may deteriorate drastically.</p>
+<p>&nbsp;</p>
+<p>We focused on Twitter as and have implemented the python program to implement sentimental analysis.</p>
+<p>&nbsp;</p>
+<p>Research results show that machine learning methods, such as SVM and naive Bayes have the highest accuracy and can be regarded as the baseline learning methods, while lexicon-based methods are very effective in some cases, which require little effort in human-labelled document.</p>
+<p>&nbsp;</p>
+<p><strong><strong>APPENDIX</strong></strong></p>
+<p>Table 1: Negative and Positive sentiment score of Training data</p>
+<p>Table 2. Accuracy of Naive Bayes Algorithm</p>
+<p>&nbsp;</p>
+<p><strong><strong>REFERENCES</strong></strong></p>
+<p>Top of Form</p>
+<p>Bottom of Form</p>
+<p>[1] H. Bagheri and M. J. Islam, &ldquo;Twitter Sentiment Analysis&rdquo;.</p>
+<p>Top of Form</p>
+<p>Bottom of Form</p>
+<p>[2] M. Desai and M. A. Mehta, &ldquo;A Hybrid Classification Algorithm to Classify Engineering Students Problems and Perks&rdquo;, vol. 6, no. 2, pp. 73-81, Jan. 2016.</p>
+<p>Top of Form</p>
+<p>Bottom of Form</p>
+<p>[3] G. Gautam and D. Yadav, &ldquo;Sentiment analysis of twitter data using machine learning approaches and semantic analysis&rdquo;, Jan. 2014.</p>
+<p>Top of Form</p>
+<p>Bottom of Form</p>
+<p>[4] &ldquo;Feature Extraction for Sentiment Classification on Twitter Data&rdquo;, vol. 5, no. 2, pp. 2183-2189, Jan. 2016.</p>
+<p>Top of Form</p>
+<p>Bottom of Form</p>
+<p>[5] M. Karanasou, A. Ampla, C. Doulkeridis, and M. Halkidi, &ldquo;Scalable and Real-Time Sentiment Analysis of Twitter Data&rdquo;, Jan. 2016.</p>
+<p>Top of Form</p>
+<p>Bottom of Form</p>
+<p>[6] V. A. and S. Sonawane, &ldquo;Sentiment Analysis of Twitter Data: A Survey of Techniques&rdquo;, vol. 139, no. 11, pp. 5-15.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
