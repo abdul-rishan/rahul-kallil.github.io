@@ -1,0 +1,2186 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 14">
+<meta name=Originator content="Microsoft Word 14">
+<link rel=File-List
+href="2019-01-08-Sentiment-Analysis-On-Twitter-Data_filelist.xml">
+<link rel=Edit-Time-Data
+href="2019-01-08-Sentiment-Analysis-On-Twitter-Data_editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Sentiment-Analysis-On-Twitter-Data</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>admin</o:Author>
+  <o:LastAuthor>admin</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>2</o:TotalTime>
+  <o:Created>2019-01-08T17:07:00Z</o:Created>
+  <o:LastSaved>2019-01-08T17:07:00Z</o:LastSaved>
+  <o:Pages>9</o:Pages>
+  <o:Words>2138</o:Words>
+  <o:Characters>12190</o:Characters>
+  <o:Lines>101</o:Lines>
+  <o:Paragraphs>28</o:Paragraphs>
+  <o:CharactersWithSpaces>14300</o:CharactersWithSpaces>
+  <o:Version>14.00</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+  <o:DoNotRelyOnCSS/>
+  <o:DoNotOrganizeInFolder/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]-->
+<link rel=themeData
+href="2019-01-08-Sentiment-Analysis-On-Twitter-Data_themedata.thmx">
+<link rel=colorSchemeMapping
+href="2019-01-08-Sentiment-Analysis-On-Twitter-Data_colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-IN</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:EnableOpenTypeKerning/>
+   <w:DontFlipMirrorIndents/>
+   <w:OverrideTableStyleHps/>
+  </w:Compatibility>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="true"
+  DefSemiHidden="true" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="267">
+  <w:LsdException Locked="false" Priority="0" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 1"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 2"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 3"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 4"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 5"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 6"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 7"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 8"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 9"/>
+  <w:LsdException Locked="false" Priority="35" QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" Priority="10" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" Priority="11" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" Priority="22" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" Priority="20" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" Priority="59" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Table Grid"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" QFormat="true" Name="TOC Heading"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-536870145 1073786111 1 0 415 0;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-520081665 -1073717157 41 0 66047 0;}
+@font-face
+	{font-family:Times-Roman;
+	panose-1:0 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-format:other;
+	mso-font-pitch:auto;
+	mso-font-signature:3 0 0 0 1 0;}
+@font-face
+	{font-family:TimesNewRomanPS-BoldMT;
+	panose-1:0 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-format:other;
+	mso-font-pitch:auto;
+	mso-font-signature:3 0 0 0 1 0;}
+@font-face
+	{font-family:Georgia;
+	panose-1:2 4 5 2 5 4 5 2 3 3;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:647 0 0 0 159 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-fareast-language:EN-US;}
+h2
+	{mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 2 Char";
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:18.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:blue;
+	mso-themecolor:hyperlink;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	color:purple;
+	mso-themecolor:followedhyperlink;
+	text-decoration:underline;
+	text-underline:single;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-link:"Balloon Text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-fareast-language:EN-US;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:36.0pt;
+	mso-add-space:auto;
+	line-height:115%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-type:export-only;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	line-height:115%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-type:export-only;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	line-height:115%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-type:export-only;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:36.0pt;
+	mso-add-space:auto;
+	line-height:115%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.Default, li.Default, div.Default
+	{mso-style-name:Default;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	color:black;
+	mso-fareast-language:EN-US;}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Balloon Text";
+	mso-ansi-font-size:8.0pt;
+	mso-bidi-font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";
+	mso-ascii-font-family:Tahoma;
+	mso-hansi-font-family:Tahoma;
+	mso-bidi-font-family:Tahoma;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 2";
+	mso-ansi-font-size:18.0pt;
+	mso-bidi-font-size:18.0pt;
+	font-family:"Times New Roman","serif";
+	mso-ascii-font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	mso-fareast-language:EN-IN;
+	font-weight:bold;}
+span.z-TopofFormChar
+	{mso-style-name:"z-Top of Form Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"z-Top of Form";
+	mso-ansi-font-size:8.0pt;
+	mso-bidi-font-size:8.0pt;
+	font-family:"Arial","sans-serif";
+	mso-ascii-font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-hansi-font-family:Arial;
+	mso-bidi-font-family:Arial;
+	display:none;
+	mso-hide:all;
+	mso-fareast-language:EN-IN;}
+span.z-BottomofFormChar
+	{mso-style-name:"z-Bottom of Form Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"z-Bottom of Form";
+	mso-ansi-font-size:8.0pt;
+	mso-bidi-font-size:8.0pt;
+	font-family:"Arial","sans-serif";
+	mso-ascii-font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-hansi-font-family:Arial;
+	mso-bidi-font-family:Arial;
+	display:none;
+	mso-hide:all;
+	mso-fareast-language:EN-IN;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-fareast-language:EN-US;}
+.MsoPapDefault
+	{mso-style-type:export-only;
+	margin-bottom:10.0pt;
+	line-height:115%;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 72.0pt 72.0pt 90.0pt;
+	mso-header-margin:35.45pt;
+	mso-footer-margin:35.45pt;
+	border:solid windowtext 1.0pt;
+	padding:24.0pt 24.0pt 24.0pt 24.0pt;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:521556972;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1898033472 1074331663 1074331673 1074331675 1074331663 1074331673 1074331675 1074331663 1074331673 1074331675;}
+@list l0:level1
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l0:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l0:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l0:level4
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l0:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l0:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l0:level7
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l0:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l0:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l1
+	{mso-list-id:1083143531;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-213721092 495622232 1074331651 1074331653 1074331649 1074331651 1074331653 1074331649 1074331651 1074331653;}
+@list l1:level1
+	{mso-level-start-at:3;
+	mso-level-number-format:bullet;
+	mso-level-text:\F0D8;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Wingdings;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-bidi-font-family:Times-Roman;}
+@list l1:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l1:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Wingdings;}
+@list l1:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l1:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l1:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Wingdings;}
+@list l1:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l1:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l1:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Wingdings;}
+@list l2
+	{mso-list-id:1438912362;
+	mso-list-type:hybrid;
+	mso-list-template-ids:364654736 1074331663 1074331673 1074331675 1074331663 1074331673 1074331675 1074331663 1074331673 1074331675;}
+@list l2:level1
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l2:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l2:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l2:level4
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l2:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l2:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l2:level7
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l2:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l2:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin-top:0cm;
+	mso-para-margin-right:0cm;
+	mso-para-margin-bottom:10.0pt;
+	mso-para-margin-left:0cm;
+	line-height:115%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-fareast-language:EN-US;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1026"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-IN link=blue vlink=purple style='tab-interval:36.0pt'>
+
+<div class=WordSection1>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:150%'><b
+style='mso-bidi-font-weight:normal'><font size=3 face="Times New Roman"><span
+style='font-size:12.0pt;line-height:150%;font-family:"Times New Roman","serif";
+font-weight:bold;mso-bidi-font-weight:normal'>SENTIMENT ANALYSIS ON TWITTER
+DATA: THEORY AND PRACTICE<o:p></o:p></span></font></b></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:150%'><b
+style='mso-bidi-font-weight:normal'><font size=3 face="Times New Roman"><span
+style='font-size:12.0pt;line-height:150%;font-family:"Times New Roman","serif";
+font-weight:bold;mso-bidi-font-weight:normal'>RAHUL R KALLIL<o:p></o:p></span></font></b></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:150%'><b
+style='mso-bidi-font-weight:normal'><font size=3 face="Times New Roman"><span
+style='font-size:12.0pt;line-height:150%;font-family:"Times New Roman","serif";
+font-weight:bold;mso-bidi-font-weight:normal'>RJ College of Arts, Science and
+Commerce<o:p></o:p></span></font></b></p>
+
+<div style='mso-element:para-border-div;border:none;border-bottom:solid windowtext 1.0pt;
+mso-border-bottom-alt:solid windowtext .5pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:150%;
+border:none;mso-border-bottom-alt:solid windowtext .5pt;padding:0cm;mso-padding-alt:
+0cm 0cm 1.0pt 0cm'><font size=3 face="Times New Roman"><span style='font-size:
+12.0pt;line-height:150%;font-family:"Times New Roman","serif"'>rahulkallil2@gmail.com<o:p></o:p></span></font></p>
+
+</div>
+
+<p class=MsoNormal style='line-height:150%'><b style='mso-bidi-font-weight:
+normal'><font size=3 face="Times New Roman"><span style='font-size:12.0pt;
+line-height:150%;font-family:"Times New Roman","serif";font-weight:bold;
+mso-bidi-font-weight:normal'><o:p>&nbsp;</o:p></span></font></b></p>
+
+<p class=MsoNormal style='line-height:150%'><b style='mso-bidi-font-weight:
+normal'><font size=3 face="Times New Roman"><span style='font-size:12.0pt;
+line-height:150%;font-family:"Times New Roman","serif";font-weight:bold;
+mso-bidi-font-weight:normal'>ABSTRACT<o:p></o:p></span></font></b></p>
+
+<p class=Default style='line-height:150%'><font size=3 color=black
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+mso-bidi-font-weight:bold'>This paper focuses on analysis of Twitter data,
+which include sentiment analysis for the tweets posted in Twitter. Social
+networks are the main resources to gather information about people’s opinion
+and sentiments towards different topics as they spend hours daily on social
+media and share their opinion. </span></font></p>
+
+<p class=Default style='line-height:150%'><font size=3 color=black
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%'>There
+has been lot of work in the field of sentiment analysis of twitter data. </span></font></p>
+
+<p class=Default style='line-height:150%'><font size=3 color=black
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%'>In this
+paper, we provide a survey and a comparative analyses of existing techniques
+for opinion mining like machine learning and lexicon-based approaches,</span></font></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%;mso-layout-grid-align:none;text-autospace:none'><font size=3
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'>Using various machine learning
+algorithms like Naive Bayes, we provide research on twitter data streams.</span></font><b><font
+size=1 face=TimesNewRomanPS-BoldMT><span style='font-size:9.0pt;line-height:
+150%;font-family:"TimesNewRomanPS-BoldMT","sans-serif";mso-bidi-font-family:
+TimesNewRomanPS-BoldMT;font-weight:bold'><o:p></o:p></span></font></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%;mso-layout-grid-align:none;text-autospace:none'><s><font size=3
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman","serif";mso-bidi-font-weight:bold'><o:p><span
+ style='text-decoration:none'>&nbsp;</span></o:p></span></font></s></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%;mso-layout-grid-align:none;text-autospace:none'><b><i style='mso-bidi-font-style:
+normal'><font size=3 face="Times New Roman"><span style='font-size:12.0pt;
+line-height:150%;font-family:"Times New Roman","serif";font-weight:bold;
+font-style:italic;mso-bidi-font-style:normal'>Keywords</span></font></i></b><b><font
+size=3 face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman","serif";font-weight:bold'>:</span></font></b><font
+size=3 face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman","serif";mso-bidi-font-weight:bold'> </span></font><font
+size=3 face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'>Opinion Mining, Text Mining, Social
+Media, Sentiment Analysis, Twitter<o:p></o:p></span></font></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%;mso-layout-grid-align:none;text-autospace:none'><font size=3
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman","serif";mso-bidi-font-weight:bold'><o:p>&nbsp;</o:p></span></font></p>
+
+<p class=MsoNormal style='line-height:150%'><a name="OLE_LINK6"></a><a
+name="OLE_LINK5"><span style='mso-bookmark:OLE_LINK6'><b style='mso-bidi-font-weight:
+normal'><font size=3 face="Times New Roman"><span style='font-size:12.0pt;
+line-height:150%;font-family:"Times New Roman","serif";font-weight:bold;
+mso-bidi-font-weight:normal'>INTRODUCTION<o:p></o:p></span></font></b></span></a></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%;mso-layout-grid-align:none;text-autospace:none'><span style='mso-bookmark:
+OLE_LINK5'><span style='mso-bookmark:OLE_LINK6'><font size=3
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'>Social media platform as the data source
+are categorize into three general categories: blogs, micro-blogging sites, and
+review site [12-15]. Among these categories, Twitter, a microblogging site is
+highly popular with over 500 million users around the world.<o:p></o:p></span></font></span></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%;mso-layout-grid-align:none;text-autospace:none'><span style='mso-bookmark:
+OLE_LINK5'><span style='mso-bookmark:OLE_LINK6'><font size=3
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'>It allows users to use a short text
+within a limit of 140 characters as their posts (also called <b><span
+style='font-weight:bold'>tweets</span></b>). Twitter sees a daily stream of
+more than 400 million tweets.<o:p></o:p></span></font></span></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%;mso-layout-grid-align:none;text-autospace:none'><span style='mso-bookmark:
+OLE_LINK5'><span style='mso-bookmark:OLE_LINK6'><font size=3
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></font></span></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%;mso-layout-grid-align:none;text-autospace:none'><span style='mso-bookmark:
+OLE_LINK5'><span style='mso-bookmark:OLE_LINK6'><font size=3
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'>These tweets include from remaining
+socially connected to their friends, family members and co-workers, to updates
+of wider interest about current affairs, encompassing all kinds of information.<o:p></o:p></span></font></span></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%;mso-layout-grid-align:none;text-autospace:none'><span style='mso-bookmark:
+OLE_LINK5'><span style='mso-bookmark:OLE_LINK6'><font size=3
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'>The topics of these tweets range widely
+from the simple, such as “what I’m doing right now,” to the thematic, such as
+“football games”.<o:p></o:p></span></font></span></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%;mso-layout-grid-align:none;text-autospace:none'><span style='mso-bookmark:
+OLE_LINK5'><span style='mso-bookmark:OLE_LINK6'><font size=3
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'>Twitter also categorizes tweets and
+trends according to region and on its web interface it displays the most recent
+tweets as feeds. <o:p></o:p></span></font></span></span></p>
+
+<p class=Default style='line-height:150%'><span style='mso-bookmark:OLE_LINK5'><span
+style='mso-bookmark:OLE_LINK6'><font size=3 color=black face="Times New Roman"><span
+style='font-size:12.0pt;line-height:150%'><o:p>&nbsp;</o:p></span></font></span></span></p>
+
+<p class=Default style='line-height:150%'><span style='mso-bookmark:OLE_LINK5'><span
+style='mso-bookmark:OLE_LINK6'><font size=3 color=black face="Times New Roman"><span
+style='font-size:12.0pt;line-height:150%'>As a social-networking service,
+Twitter features two social models called “following” and </span></font></span></span><span
+style='mso-bookmark:OLE_LINK5'><span style='mso-bookmark:OLE_LINK6'><font
+color=black><span style='color:windowtext'>‘Hashtags’. Following is a model
+wherein </span></font>a user is allowed to choose any other users that she
+wants to follow. The one she follows is her friend, and she is the follower. A
+follower can follow any user without any permission or reciprocating by
+following her back. A follower receives all the updates of her friends [4].</span></span><span
+style='mso-bookmark:OLE_LINK5'><span style='mso-bookmark:OLE_LINK6'><font
+color=black><span style='color:windowtext'><o:p></o:p></span></font></span></span></p>
+
+<p class=Default style='line-height:150%'><span style='mso-bookmark:OLE_LINK5'><span
+style='mso-bookmark:OLE_LINK6'><font size=3 color=black face="Times New Roman"><span
+style='font-size:12.0pt;line-height:150%;color:windowtext'><o:p>&nbsp;</o:p></span></font></span></span></p>
+
+<p class=Default style='line-height:150%'><span style='mso-bookmark:OLE_LINK5'><span
+style='mso-bookmark:OLE_LINK6'><font size=3 color=black face="Times New Roman"><span
+style='font-size:12.0pt;line-height:150%'>Users can also add tags for the
+tweets. On Twitter the tag is called “hashtag”, and begins with sign “#”. </span></font></span></span><span
+style='mso-bookmark:OLE_LINK5'><span style='mso-bookmark:OLE_LINK6'><font
+color=black><span style='color:windowtext'>Hash ‘#’, followed by the
+trend-name, is to identify and group tweets about a particular trending topic.
+The Hashtags generally are telegram style word(s) description without spaces
+and attempts to summarize the trend. </span></font></span></span></p>
+
+<p class=Default style='line-height:150%'><span style='mso-bookmark:OLE_LINK5'><span
+style='mso-bookmark:OLE_LINK6'><font size=3 color=black face="Times New Roman"><span
+style='font-size:12.0pt;line-height:150%'>Different types of tweets and
+hashtags make Twitter data stream more readable.</span></font></span></span><span
+style='mso-bookmark:OLE_LINK5'><span style='mso-bookmark:OLE_LINK6'><font
+color=black><span style='color:windowtext'><o:p></o:p></span></font></span></span></p>
+
+<p class=Default style='line-height:150%'><span style='mso-bookmark:OLE_LINK5'><span
+style='mso-bookmark:OLE_LINK6'><font size=3 color=black face="Times New Roman"><span
+style='font-size:12.0pt;line-height:150%;color:windowtext'>Twitter also
+provides its data in the form of API for developers to create applications that
+require data gathered by tweets and trends.<o:p></o:p></span></font></span></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%;mso-layout-grid-align:none;text-autospace:none'><span style='mso-bookmark:
+OLE_LINK5'><span style='mso-bookmark:OLE_LINK6'><font size=3
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></font></span></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%;mso-layout-grid-align:none;text-autospace:none'><span style='mso-bookmark:
+OLE_LINK5'><span style='mso-bookmark:OLE_LINK6'><font size=3
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'>There are three types of tweets: reply,
+retweet and normal tweet. Reply is a message to any user with the sign “@”
+followed by the target user's name at the beginning of the tweet. Retweet is a
+message which user shares from friends to her followers which begins with the
+sign “RT”. Normal tweet are the tweets except replies and retweets.<o:p></o:p></span></font></span></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%;mso-layout-grid-align:none;text-autospace:none'><span style='mso-bookmark:
+OLE_LINK5'><span style='mso-bookmark:OLE_LINK6'><font size=3
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></font></span></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%;mso-layout-grid-align:none;text-autospace:none'><span style='mso-bookmark:
+OLE_LINK5'><span style='mso-bookmark:OLE_LINK6'><font size=3
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'>In this section, we provide background
+on Twitter relevant to this work, describing the syntax utilized by its users,
+and the way they interact with each other and spread information. Then, we get
+into detail of how Twitter presents and deals with trends (defined as <i><span
+style='font-style:italic'>trending topics </span></i>by the microblogging
+system), which we utilize as the input to our trend classifier and understand
+the sentiment of the trending tweets.<o:p></o:p></span></font></span></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%;mso-layout-grid-align:none;text-autospace:none'><span style='mso-bookmark:
+OLE_LINK5'><span style='mso-bookmark:OLE_LINK6'><font size=3
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></font></span></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%;mso-layout-grid-align:none;text-autospace:none'><span style='mso-bookmark:
+OLE_LINK5'><span style='mso-bookmark:OLE_LINK6'><font size=3
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'>Sentiment analysis (SA) tells user
+whether the information about the product is satisfactory or not before they
+buy it.<o:p></o:p></span></font></span></span></p>
+
+<span style='mso-bookmark:OLE_LINK6'></span><span style='mso-bookmark:OLE_LINK5'></span>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%;mso-layout-grid-align:none;text-autospace:none'><b style='mso-bidi-font-weight:
+normal'><font size=3 face="Times New Roman"><span style='font-size:12.0pt;
+line-height:150%;font-family:"Times New Roman","serif";font-weight:bold;
+mso-bidi-font-weight:normal'><o:p>&nbsp;</o:p></span></font></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%;mso-layout-grid-align:none;text-autospace:none'><b style='mso-bidi-font-weight:
+normal'><font size=3 face="Times New Roman"><span style='font-size:12.0pt;
+line-height:150%;font-family:"Times New Roman","serif";font-weight:bold;
+mso-bidi-font-weight:normal'><o:p>&nbsp;</o:p></span></font></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%;mso-layout-grid-align:none;text-autospace:none'><b style='mso-bidi-font-weight:
+normal'><font size=3 face="Times New Roman"><span style='font-size:12.0pt;
+line-height:150%;font-family:"Times New Roman","serif";font-weight:bold;
+mso-bidi-font-weight:normal'><o:p>&nbsp;</o:p></span></font></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%;mso-layout-grid-align:none;text-autospace:none'><b style='mso-bidi-font-weight:
+normal'><font size=3 face="Times New Roman"><span style='font-size:12.0pt;
+line-height:150%;font-family:"Times New Roman","serif";font-weight:bold;
+mso-bidi-font-weight:normal'><o:p>&nbsp;</o:p></span></font></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%;tab-stops:center 225.65pt;mso-layout-grid-align:none;text-autospace:none'><b
+style='mso-bidi-font-weight:normal'><font size=3 face="Times New Roman"><span
+style='font-size:12.0pt;line-height:150%;font-family:"Times New Roman","serif";
+font-weight:bold;mso-bidi-font-weight:normal'>2. REVIEW AND DISCUSSION<o:p></o:p></span></font></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%;tab-stops:center 225.65pt;mso-layout-grid-align:none;text-autospace:none'><b
+style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:normal'><font
+size=3 face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman","serif";font-weight:bold;mso-bidi-font-weight:
+normal;font-style:italic;mso-bidi-font-style:normal'>Sentiment Analysis<o:p></o:p></span></font></i></b></p>
+
+<p class=Default style='line-height:150%'><font size=3 color=black
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%'>Sentiment
+analysis can be defined as a process that automates mining of attitudes,
+opinions, views and emotions from text, speech, tweets and database sources
+through Natural Language Processing (NLP). Sentiment analysis involves
+classifying opinions in text into categories like &quot;positive&quot; or
+&quot;negative&quot; or &quot;neutral&quot;. </span></font></p>
+
+<p class=Default style='line-height:150%'><b style='mso-bidi-font-weight:normal'><font
+size=3 color=black face="Times New Roman"><span style='font-size:12.0pt;
+line-height:150%;font-weight:bold;mso-bidi-font-weight:normal'><o:p>&nbsp;</o:p></span></font></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%;tab-stops:center 225.65pt;mso-layout-grid-align:none;text-autospace:none'><font
+size=3 face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'>Pak and <span class=SpellE>Paroubek</span>(2010)<span
+style='mso-spacerun:yes'>  </span>proposed a model to classify the tweets as
+objective, positive and negative. They created a twitter corpus by collecting
+tweets using Twitter API. Using that corpus, they developed a sentiment
+classifier based on the multinomial Naive Bayes method that uses features like
+N-gram and POS-tags. The training set they used was less efficient since it
+contains only tweets having emoticons.<o:p></o:p></span></font></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%;tab-stops:center 225.65pt;mso-layout-grid-align:none;text-autospace:none'><b
+style='mso-bidi-font-weight:normal'><font size=3 face="Times New Roman"><span
+style='font-size:12.0pt;line-height:150%;font-family:"Times New Roman","serif";
+font-weight:bold;mso-bidi-font-weight:normal'><o:p>&nbsp;</o:p></span></font></b></p>
+
+<p class=Default style='line-height:150%'><font size=3 color=black
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%'>Parikh
+and <span class=SpellE>Movassate</span>(2009) <span
+style='mso-spacerun:yes'> </span>implemented two models, a Naive Bayes bigram
+model and a Maximum Entropy model to classify tweets. They found that the Naive
+Bayes classifiers worked much better than the Maximum Entropy model. </span></font></p>
+
+<p class=Default style='line-height:150%'><font size=3 color=black
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%'><o:p>&nbsp;</o:p></span></font></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%;tab-stops:center 225.65pt;mso-layout-grid-align:none;text-autospace:none'><font
+size=3 face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'>Go and <span class=SpellE>L.Huang</span>
+(2009) proposed a solution for sentiment analysis for twitter data by using
+distant supervision, in which they build models using Naive Bayes, Maximum
+Entropy and Support Vector Machines (SVM). Their feature space consisted of
+unigrams, bigrams and POS. They concluded that SVM outperformed other models
+and that unigram were more effective as features.<o:p></o:p></span></font></p>
+
+<p class=Default style='line-height:150%'><font size=3 color=black
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%'><o:p>&nbsp;</o:p></span></font></p>
+
+<p class=Default style='line-height:150%'><b><font size=3 color=black
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-weight:bold'>3. APPROACHES FOR SENTIMENT ANALYSIS </span></font></b></p>
+
+<p class=Default style='line-height:150%'><font size=3 color=black
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%'><o:p>&nbsp;</o:p></span></font></p>
+
+<p class=Default style='line-height:150%'><font size=3 color=black
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%'>Opinion
+mining (sentiment extraction) is employed on Twitter posts by means of
+following techniques </span></font></p>
+
+<p class=Default style='margin-top:0cm;margin-right:0cm;margin-bottom:1.65pt;
+margin-left:36.0pt;text-indent:-18.0pt;line-height:150%;mso-list:l0 level1 lfo3'><![if !supportLists]><font
+size=3 color=black face="Times New Roman"><span style='font-size:12.0pt;
+line-height:150%;mso-fareast-font-family:"Times New Roman"'><span
+style='mso-list:Ignore'>1.<font size=1 face="Times New Roman"><span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font></span></span></font><![endif]>Lexical
+analysis </p>
+
+<p class=Default style='margin-top:0cm;margin-right:0cm;margin-bottom:1.65pt;
+margin-left:36.0pt;text-indent:-18.0pt;line-height:150%;mso-list:l0 level1 lfo3'><![if !supportLists]><font
+size=3 color=black face="Times New Roman"><span style='font-size:12.0pt;
+line-height:150%;mso-fareast-font-family:"Times New Roman"'><span
+style='mso-list:Ignore'>2.<font size=1 face="Times New Roman"><span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font></span></span></font><![endif]>Machine
+learning based analysis </p>
+
+<p class=Default style='line-height:150%'><font size=3 color=black
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%'><o:p>&nbsp;</o:p></span></font></p>
+
+<p class=Default style='line-height:150%'><b><i style='mso-bidi-font-style:
+normal'><font size=3 color=black face="Times New Roman"><span style='font-size:
+12.0pt;line-height:150%;font-weight:bold;font-style:italic;mso-bidi-font-style:
+normal'>3.1 Lexical analysis<o:p></o:p></span></font></i></b></p>
+
+<p class=Default style='line-height:150%'><font size=3 color=black
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%'>The
+input text is converted to tokens by the Tokenizer. Every new token encountered
+is then matched for the lexicon in the dictionary. If there is a positive
+match, the score is added to the total pool of score for the input text. For
+instance if “dramatic” is a positive match in the dictionary then the total
+score of the text is incremented. Other-wise the score is decremented or the
+word is tagged as negative.</span></font></p>
+
+<p class=Default style='line-height:150%'><font size=3 color=black
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%'><o:p>&nbsp;</o:p></span></font></p>
+
+<p class=Default style='line-height:150%'><b><i style='mso-bidi-font-style:
+normal'><font size=3 color=black face="Times New Roman"><span style='font-size:
+12.0pt;line-height:150%;font-weight:bold;font-style:italic;mso-bidi-font-style:
+normal'>3.2 Machine learning based analysis<o:p></o:p></span></font></i></b></p>
+
+<p class=Default style='line-height:150%'><font size=3 color=black
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%'>Following
+are the phases required for sentiment analysis of twitter data:</span></font></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%;mso-layout-grid-align:none;text-autospace:none'><b><i style='mso-bidi-font-style:
+normal'><font size=3 face="Times New Roman"><span style='font-size:12.0pt;
+line-height:150%;font-family:"Times New Roman","serif";font-weight:bold;
+font-style:italic;mso-bidi-font-style:normal'>3.2.1 Data Collecting</span></font></i></b><b><font
+size=3 face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman","serif";font-weight:bold'> </span></font></b><font
+size=3 face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'>– There are three possible ways to
+collect Twitter data for research as follows.<o:p></o:p></span></font></p>
+
+<p class=MsoListParagraphCxSpFirst style='margin-bottom:0cm;margin-bottom:.0001pt;
+mso-add-space:auto;text-indent:-18.0pt;line-height:150%;mso-list:l1 level1 lfo1;
+mso-layout-grid-align:none;text-autospace:none'><![if !supportLists]><font
+size=3 face=Wingdings><span style='font-size:12.0pt;line-height:150%;
+font-family:Wingdings;mso-fareast-font-family:Wingdings;mso-bidi-font-family:
+Wingdings'><span style='mso-list:Ignore'>Ø<font size=1 face="Times New Roman"><span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></font></span></span></font><![endif]><font
+size=3 face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'>Application Program Interfaces (APIs):
+Twitter provides two types of APIs such as search API and stream API<o:p></o:p></span></font></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-bottom:0cm;margin-bottom:
+.0001pt;mso-add-space:auto;text-indent:-18.0pt;line-height:150%;mso-list:l1 level1 lfo1;
+mso-layout-grid-align:none;text-autospace:none'><![if !supportLists]><font
+size=3 face=Wingdings><span style='font-size:12.0pt;line-height:150%;
+font-family:Wingdings;mso-fareast-font-family:Wingdings;mso-bidi-font-family:
+Wingdings'><span style='mso-list:Ignore'>Ø<font size=1 face="Times New Roman"><span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></font></span></span></font><![endif]><font
+size=3 face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'>Data repositories such as UCI,
+Friendster, <span class=SpellE>Kdnuggets</span>, and SNAP, <span class=SpellE>Kaggle</span><o:p></o:p></span></font></p>
+
+<p class=MsoListParagraphCxSpLast style='margin-bottom:0cm;margin-bottom:.0001pt;
+mso-add-space:auto;text-indent:-18.0pt;line-height:150%;mso-list:l1 level1 lfo1;
+mso-layout-grid-align:none;text-autospace:none'><![if !supportLists]><font
+size=3 face=Wingdings><span style='font-size:12.0pt;line-height:150%;
+font-family:Wingdings;mso-fareast-font-family:Wingdings;mso-bidi-font-family:
+Wingdings'><span style='mso-list:Ignore'>Ø<font size=1 face="Times New Roman"><span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></font></span></span></font><![endif]><font
+size=3 face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'>Start with downloading and caching the
+sentiment dictionary &amp; Download twitter testing data sets, input it in to
+the program.<o:p></o:p></span></font></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%;mso-layout-grid-align:none;text-autospace:none'><font size=3
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></font></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%;mso-layout-grid-align:none;text-autospace:none'><font size=3
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'>The link to download the dataset from
+Stanford development program:<o:p></o:p></span></font></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%;mso-layout-grid-align:none;text-autospace:none'><font size=3
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'>http://cs.stanford.edu/people/alecmgo/trainingandtestdata.zip<o:p></o:p></span></font></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%;mso-layout-grid-align:none;text-autospace:none'><font size=3
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'>This data consists of 4 million tweets
+categorized as positive and negative.<o:p></o:p></span></font></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%;mso-layout-grid-align:none;text-autospace:none'><font size=3
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></font></p>
+
+<p class=Default style='margin-bottom:1.4pt;line-height:150%'><b><i
+style='mso-bidi-font-style:normal'><font size=3 color=black
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-weight:bold;font-style:italic;mso-bidi-font-style:normal'>3.2
+Pre-processing</span></font></i> </b>– The collected data is raw data. In order
+to apply classifier it is necessary to pre-process the raw data. In this stage,
+the acquired data is cleaned and made ready for feeding it into the classifier.
+Cleaning includes extraction of keywords and symbols. For instance – Emoticons
+are the smiley used in textual form to represent emotions e.g. “:-)”, “:)” <span
+class=SpellE>etc</span> and Removing retweets:</p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%;mso-layout-grid-align:none;text-autospace:none'><font size=3
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'>Many of the tweets were the same; they
+were what Twitter calls a `retweet'. Since a retweet does not take as much
+thought as an original tweet we decided to remove the retweets as to prevent a
+bias in the data. If several columns in our term document matrix were
+identical, we removed all but one of those columns.<o:p></o:p></span></font></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%;mso-layout-grid-align:none;text-autospace:none'><font size=3
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></font></p>
+
+<p class=Default style='line-height:150%'><font size=3 color=black
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%'>The
+pre-processing task involves:</span></font></p>
+
+<p class=Default style='margin-left:36.0pt;text-indent:-18.0pt;line-height:
+150%;mso-list:l2 level1 lfo2'><![if !supportLists]><font size=3 color=black
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+mso-fareast-font-family:"Times New Roman"'><span style='mso-list:Ignore'>1.<font
+size=1 face="Times New Roman"><span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></font></span></span></font><![endif]>Decompress slang words (Omg for Oh
+my God, ttyl for Talk to you later)</p>
+
+<p class=Default style='margin-left:36.0pt;text-indent:-18.0pt;line-height:
+150%;mso-list:l2 level1 lfo2'><![if !supportLists]><font size=3 color=black
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+mso-fareast-font-family:"Times New Roman"'><span style='mso-list:Ignore'>2.<font
+size=1 face="Times New Roman"><span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></font></span></span></font><![endif]>Make the case uniform(either
+lowercase or Uppercase)</p>
+
+<p class=Default style='margin-top:0cm;margin-right:0cm;margin-bottom:7.35pt;
+margin-left:36.0pt;text-indent:-18.0pt;line-height:150%;mso-list:l2 level1 lfo2'><![if !supportLists]><font
+size=3 color=black face="Times New Roman"><span style='font-size:12.0pt;
+line-height:150%;mso-fareast-font-family:"Times New Roman"'><span
+style='mso-list:Ignore'>3.<font size=1 face="Times New Roman"><span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font></span></span></font><![endif]>Remove
+un-necessary white spaces and tabs</p>
+
+<p class=Default style='margin-top:0cm;margin-right:0cm;margin-bottom:7.35pt;
+margin-left:36.0pt;text-indent:-18.0pt;line-height:150%;mso-list:l2 level1 lfo2'><![if !supportLists]><font
+size=3 color=black face="Times New Roman"><span style='font-size:12.0pt;
+line-height:150%;mso-fareast-font-family:"Times New Roman"'><span
+style='mso-list:Ignore'>4.<font size=1 face="Times New Roman"><span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font></span></span></font><![endif]>Remove
+retweets</p>
+
+<p class=Default style='margin-top:0cm;margin-right:0cm;margin-bottom:7.35pt;
+margin-left:36.0pt;text-indent:-18.0pt;line-height:150%;mso-list:l2 level1 lfo2'><![if !supportLists]><font
+size=3 color=black face="Times New Roman"><span style='font-size:12.0pt;
+line-height:150%;mso-fareast-font-family:"Times New Roman"'><span
+style='mso-list:Ignore'>5.<font size=1 face="Times New Roman"><span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font></span></span></font><![endif]>Remove
+all URLs (e.g. www.xyz.com), hash tags (e.g. #topic), targets (@username) </p>
+
+<p class=Default style='margin-top:0cm;margin-right:0cm;margin-bottom:7.35pt;
+margin-left:36.0pt;text-indent:-18.0pt;line-height:150%;mso-list:l2 level1 lfo2'><![if !supportLists]><font
+size=3 color=black face="Times New Roman"><span style='font-size:12.0pt;
+line-height:150%;mso-fareast-font-family:"Times New Roman"'><span
+style='mso-list:Ignore'>6.<font size=1 face="Times New Roman"><span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font></span></span></font><![endif]>Correct
+the spellings; sequence of repeated characters is to be handled </p>
+
+<p class=Default style='margin-top:0cm;margin-right:0cm;margin-bottom:7.35pt;
+margin-left:36.0pt;text-indent:-18.0pt;line-height:150%;mso-list:l2 level1 lfo2'><![if !supportLists]><font
+size=3 color=black face="Times New Roman"><span style='font-size:12.0pt;
+line-height:150%;mso-fareast-font-family:"Times New Roman"'><span
+style='mso-list:Ignore'>7.<font size=1 face="Times New Roman"><span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font></span></span></font><![endif]>Replace
+all the emoticons with their sentiment. </p>
+
+<p class=Default style='margin-top:0cm;margin-right:0cm;margin-bottom:7.35pt;
+margin-left:36.0pt;text-indent:-18.0pt;line-height:150%;mso-list:l2 level1 lfo2'><![if !supportLists]><font
+size=3 color=black face="Times New Roman"><span style='font-size:12.0pt;
+line-height:150%;mso-fareast-font-family:"Times New Roman"'><span
+style='mso-list:Ignore'>8.<font size=1 face="Times New Roman"><span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font></span></span></font><![endif]>Remove
+all punctuations, symbols, numbers </p>
+
+<p class=Default style='margin-top:0cm;margin-right:0cm;margin-bottom:7.35pt;
+margin-left:36.0pt;text-indent:-18.0pt;line-height:150%;mso-list:l2 level1 lfo2'><![if !supportLists]><font
+size=3 color=black face="Times New Roman"><span style='font-size:12.0pt;
+line-height:150%;mso-fareast-font-family:"Times New Roman"'><span
+style='mso-list:Ignore'>9.<font size=1 face="Times New Roman"><span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font></span></span></font><![endif]>Remove
+Stop Words </p>
+
+<p class=Default style='margin-top:0cm;margin-right:0cm;margin-bottom:7.35pt;
+margin-left:36.0pt;text-indent:-18.0pt;line-height:150%;mso-list:l2 level1 lfo2'><![if !supportLists]><font
+size=3 color=black face="Times New Roman"><span style='font-size:12.0pt;
+line-height:150%;mso-fareast-font-family:"Times New Roman"'><span
+style='mso-list:Ignore'>10.<font size=1 face="Times New Roman"><span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></font></span></span></font><![endif]>Expand
+Acronyms (we can use an acronym dictionary) </p>
+
+<p class=Default style='margin-top:0cm;margin-right:0cm;margin-bottom:7.35pt;
+margin-left:36.0pt;text-indent:-18.0pt;line-height:150%;mso-list:l2 level1 lfo2'><![if !supportLists]><font
+size=3 color=black face="Times New Roman"><span style='font-size:12.0pt;
+line-height:150%;mso-fareast-font-family:"Times New Roman"'><span
+style='mso-list:Ignore'>11.<font size=1 face="Times New Roman"><span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></font></span></span></font><![endif]>Remove
+Non-English Tweets</p>
+
+<p class=Default style='margin-bottom:1.4pt;line-height:150%'><b><font size=3
+color=black face="Times New Roman"><span style='font-size:12.0pt;line-height:
+150%;font-weight:bold'>3.3 Training Data </span></font></b>– </p>
+
+<p class=Default style='margin-bottom:1.4pt;line-height:150%'><font size=3
+color=black face="Times New Roman"><span style='font-size:12.0pt;line-height:
+150%'>In the training data, a collection of tagged corpora is provided..
+Training the classifier makes it easier for future predictions for unknown
+data. We can figure out </span></font></p>
+
+<p class=Default style='line-height:150%'><i><font size=3 color=black
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-style:italic'>Words And Their Frequencies, Parts Of Speech Tags ,Opinion
+Words And Phrases , Position Of Term, Negation <o:p></o:p></span></font></i></p>
+
+<p class=Default style='line-height:150%'><font size=3 color=black
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%'><o:p>&nbsp;</o:p></span></font></p>
+
+<p class=Default style='margin-bottom:1.4pt;line-height:150%'><b
+style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:normal'><font
+size=3 color=black face="Times New Roman"><span style='font-size:12.0pt;
+line-height:150%;font-weight:bold;mso-bidi-font-weight:normal;font-style:italic;
+mso-bidi-font-style:normal'>Features:<o:p></o:p></span></font></i></b></p>
+
+<p class=Default style='margin-bottom:1.4pt;line-height:150%'><font size=3
+color=black face="Times New Roman"><span style='font-size:12.0pt;line-height:
+150%'>Generally, unigrams (single word phrases), bi-grams (two consecutive
+phrases), tri-grams (three consecutive phrases) are selected as feature
+vectors. There are a variety of proposed features namely number of positive
+words, number of negative words,</span></font></p>
+
+<p class=Default style='margin-bottom:1.4pt;line-height:150%'><font size=3
+color=black face="Times New Roman"><span style='font-size:12.0pt;line-height:
+150%'><o:p>&nbsp;</o:p></span></font></p>
+
+<p class=Default style='margin-bottom:1.4pt;line-height:150%'><font size=3
+color=black face="Times New Roman"><span style='font-size:12.0pt;line-height:
+150%'>A hand-tagged collection of data is prepared by most commonly used
+crowd-sourcing method. This data is the fuel for the classifier; it will be fed
+to the algorithm for learning purpose. </span></font></p>
+
+<p class=Default style='margin-bottom:1.4pt;line-height:150%'><font size=3
+color=black face="Times New Roman"><span style='font-size:12.0pt;line-height:
+150%'><o:p>&nbsp;</o:p></span></font></p>
+
+<p class=Default style='margin-bottom:1.4pt;line-height:150%'><b><i
+style='mso-bidi-font-style:normal'><font size=3 color=black
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-weight:bold;font-style:italic;mso-bidi-font-style:normal'>3.4
+Classification</span></font></i> </b>– This is the heart of the whole
+technique. Depending upon the requirement of the application SVM or Naïve Bayes
+is deployed for analysis. The classifier (after completing the training) is
+ready to be deployed to the real time tweets/text for sentiment extraction
+purpose. </p>
+
+<p class=Default style='line-height:150%'><font size=3 color=black
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%'><o:p>&nbsp;</o:p></span></font></p>
+
+<p class=Default style='line-height:150%'><b><i style='mso-bidi-font-style:
+normal'><font size=3 color=black face="Times New Roman"><span style='font-size:
+12.0pt;line-height:150%;font-weight:bold;font-style:italic;mso-bidi-font-style:
+normal'>3.5 Results</span></font></i> </b>– Results are plotted based on the
+type of representation selected i.e. charts, graphs, etc. Performance tuning is
+done prior to the release of the algorithm </p>
+
+<p class=Default style='line-height:150%'><font size=3 color=black
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%'>Accuracy
+is reported to vary from 63% to 80% depending upon the combination of various
+features selected.</span></font></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%;mso-layout-grid-align:none;text-autospace:none'><font size=3
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></font></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%;mso-layout-grid-align:none;text-autospace:none'><b><font size=3
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman","serif";font-weight:bold'>4. METHODOLOGY AND
+RESULTS<o:p></o:p></span></font></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%;mso-layout-grid-align:none;text-autospace:none'><font size=3
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'>In this paper, we used python to
+implement sentimental analysis. Some packages have utilized including <span
+class=SpellE><i><span style='font-style:italic'>tweepy</span></i></span><i><span
+style='font-style:italic'> </span></i>and <span class=SpellE><i><span
+style='font-style:italic'>textblob</span></i></span>. We can install the
+required libraries by following commands:<o:p></o:p></span></font></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%;mso-layout-grid-align:none;text-autospace:none'><font size=3
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'>• pip install <span class=SpellE>tweepy</span><o:p></o:p></span></font></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%;mso-layout-grid-align:none;text-autospace:none'><font size=3
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'>• pip install <span class=SpellE>textblob</span><o:p></o:p></span></font></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%;mso-layout-grid-align:none;text-autospace:none'><font size=3
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'>The second step is downloading the
+dictionary by running the following command:<o:p></o:p></span></font></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%;mso-layout-grid-align:none;text-autospace:none'><i><font size=3
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman","serif";font-style:italic'>python -m <span
+class=SpellE>textblob.download_corpora</span>.<o:p></o:p></span></font></i></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%;mso-layout-grid-align:none;text-autospace:none'><font size=3
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'>The <span class=SpellE>textblob</span>
+is a python library for text processing and it uses NLTK for natural language
+processing [6]. Corpora is a large and structured set of texts which we need
+for <span class=SpellE>analyzing</span> tweets.<o:p></o:p></span></font></p>
+
+<p class=Default style='line-height:150%'><font size=3 color=black
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+color:windowtext'><o:p>&nbsp;</o:p></span></font></p>
+
+<p class=Default style='line-height:150%'><font size=3 color=black
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+color:windowtext'>5</span></font><b><span style='font-weight:bold'>. RESULTS
+AND DISCUSSION </span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%;mso-layout-grid-align:none;text-autospace:none'><font size=3
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></font></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%;mso-layout-grid-align:none;text-autospace:none'><font size=3
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'>The twitter dataset is publicly made
+available by Stanford University. Analyses were done on this labelled datasets
+using various feature extraction technique. We used the framework where the
+pre-processor is applied to the raw sentences which make it more appropriate to
+understand. Further, the different machine learning techniques trains the
+dataset with feature vectors and then the semantic analysis offers a large set
+of synonyms and similarity which provides the polarity of the content.<o:p></o:p></span></font></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%;mso-layout-grid-align:none;text-autospace:none'><font size=3
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></font></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%;mso-layout-grid-align:none;text-autospace:none'><a name="OLE_LINK19"></a><a
+name="OLE_LINK18"><span style='mso-bookmark:OLE_LINK19'><font size=3
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'>Table 1: Negative and Positive sentiment
+score of Training data<o:p></o:p></span></font></span></a></p>
+
+<span style='mso-bookmark:OLE_LINK19'></span><span style='mso-bookmark:OLE_LINK18'></span>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%;mso-layout-grid-align:none;text-autospace:none'><font size=3
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman","serif";mso-fareast-language:EN-IN;mso-no-proof:
+yes'><!--[if gte vml 1]><v:shapetype id="_x0000_t75" coordsize="21600,21600"
+ o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f"
+ stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="Picture_x0020_1" o:spid="_x0000_i1026" type="#_x0000_t75"
+ style='width:347.25pt;height:132.75pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="2019-01-08-Sentiment-Analysis-On-Twitter-Data_image001.png"
+  o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=463 height=177
+src="2019-01-08-Sentiment-Analysis-On-Twitter-Data_image001.png" v:shapes="Picture_x0020_1"><![endif]></span></font><font
+size=3 face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'><o:p></o:p></span></font></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%;mso-layout-grid-align:none;text-autospace:none'><font size=3
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></font></p>
+
+<p class=Default style='line-height:150%'><font size=3 color=black
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%'>Following
+are the details on most informative features after the classifier is executed
+on train data. </span></font></p>
+
+<p class=Default style='line-height:150%'><font size=3 color=black
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%'>sad = <span
+style='mso-tab-count:2'>              </span>True <span style='mso-tab-count:
+1'>    </span><span style='mso-spacerun:yes'> </span><span class=SpellE>neg</span>
+: <span class=SpellE>pos</span> = 37.6 : 1.0 </span></font></p>
+
+<p class=Default style='line-height:150%'><font size=3 color=black
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%'>worst = <span
+style='mso-tab-count:1'>           </span>True<span style='mso-tab-count:1'>     </span>
+<span class=SpellE>neg</span> :<span class=SpellE>pos</span> = 32.4 : 1.0 </span></font></p>
+
+<p class=Default style='line-height:150%'><font size=3 color=black
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%'>crying =
+<span style='mso-tab-count:1'>          </span>True <span style='mso-tab-count:
+1'>    </span><span style='mso-spacerun:yes'> </span><span class=SpellE>neg</span>
+: <span class=SpellE>pos</span> = 24.7 : 1.0 </span></font></p>
+
+<p class=Default style='line-height:150%'><span class=SpellE><font size=3
+color=black face="Times New Roman"><span style='font-size:12.0pt;line-height:
+150%'>fml</span></font></span> = <span style='mso-tab-count:2'>              </span>True<span
+style='mso-tab-count:1'>     </span> <span class=SpellE>neg</span> : <span
+class=SpellE>pos</span> = 24.1 : 1.0 </p>
+
+<p class=Default style='line-height:150%'><font size=3 color=black
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%'>hurts = <span
+style='mso-tab-count:1'>            </span>True <span
+style='mso-spacerun:yes'>    </span><span class=SpellE>neg</span> : <span
+class=SpellE>pos</span> = 21.2 : 1.0 </span></font></p>
+
+<p class=Default style='line-height:150%'><font size=3 color=black
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%'>awful = <span
+style='mso-tab-count:1'>           </span>True <span
+style='mso-spacerun:yes'>    </span><span class=SpellE>neg</span> : <span
+class=SpellE>pos</span> = 21.1 : 1.0 </span></font></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%;mso-layout-grid-align:none;text-autospace:none'><font size=3
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'>ugh. = <span style='mso-tab-count:2'>             </span>True
+<span style='mso-spacerun:yes'>    </span><span class=SpellE>neg</span> :<span
+class=SpellE>pos</span> = 20.4 : 1.0<o:p></o:p></span></font></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%;mso-layout-grid-align:none;text-autospace:none'><font size=3
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></font></p>
+
+<p class=Default style='line-height:150%'><b><i style='mso-bidi-font-style:
+normal'><font size=3 color=black face="Times New Roman"><span style='font-size:
+12.0pt;line-height:150%;font-weight:bold;font-style:italic;mso-bidi-font-style:
+normal'>Effect of Stop words </span></font></i></b><i style='mso-bidi-font-style:
+normal'><span style='font-style:italic;mso-bidi-font-style:normal'><o:p></o:p></span></i></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%;mso-layout-grid-align:none;text-autospace:none'><font size=3
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'>When Naive Bayes was run, it gave an
+accuracy of 73.65 percent, which is considered as the baseline result.<o:p></o:p></span></font></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%;mso-layout-grid-align:none;text-autospace:none'><font size=3
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'>When stop words were removed and Naive
+Bayes was run, it gave an accuracy of <span style='mso-spacerun:yes'> </span>74.56
+percent. Following table shows the accuracy obtained at different sizes for the
+Naïve Bayes with stop words removed and using pre-processed data and based on
+unigram model.<o:p></o:p></span></font></p>
+
+<p class=Default style='line-height:150%'><font size=3 color=black
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%'>sad = <span
+style='mso-tab-count:2'>              </span>True <span class=SpellE>neg</span>
+: <span class=SpellE>pos</span> = 27.6 : 1.0 </span></font></p>
+
+<p class=Default style='line-height:150%'><font size=3 color=black
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%'>awful = <span
+style='mso-tab-count:1'>           </span>True <span class=SpellE>neg</span> : <span
+class=SpellE>pos</span> = 20.3 : 1.0 </span></font></p>
+
+<p class=Default style='line-height:150%'><font size=3 color=black
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%'>ugh = <span
+style='mso-tab-count:2'>              </span>True <span class=SpellE>neg</span>
+: <span class=SpellE>pos</span> = 19.3 : 1.0 </span></font></p>
+
+<p class=Default style='line-height:150%'><font size=3 color=black
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%'>poor = <span
+style='mso-tab-count:2'>             </span>True <span class=SpellE>neg</span>
+: <span class=SpellE>pos</span> = 19.3 : 1.0 </span></font></p>
+
+<p class=Default style='line-height:150%'><font size=3 color=black
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%'>sucks = <span
+style='mso-tab-count:1'>           </span>True <span class=SpellE>neg</span> : <span
+class=SpellE>pos</span> = 18.7 : 1.0 </span></font></p>
+
+<p class=Default style='line-height:150%'><font size=3 color=black
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%'>upset = <span
+style='mso-tab-count:1'>           </span>True <span class=SpellE>neg</span> : <span
+class=SpellE>pos</span> = 18.0 : 1.0 </span></font></p>
+
+<p class=Default style='line-height:150%'><font size=3 color=black
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%'>argh = <span
+style='mso-tab-count:2'>             </span>True <span class=SpellE>neg</span>
+: <span class=SpellE>pos</span> = 17.3 : 1.0 </span></font></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%;mso-layout-grid-align:none;text-autospace:none'><font size=3
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'>battery = <span style='mso-tab-count:
+1'>         </span>True <span class=SpellE>neg</span> : <span class=SpellE>pos</span>
+= 16.6 : 1.0<o:p></o:p></span></font></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%;mso-layout-grid-align:none;text-autospace:none'><font size=3
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></font></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%;mso-layout-grid-align:none;text-autospace:none'><font size=3
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'>This shows that stop words really affect
+the predictions. Thus removal of stop words makes a lot of difference to the
+accuracy.<o:p></o:p></span></font></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%;mso-layout-grid-align:none;text-autospace:none'><font size=3
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></font></p>
+
+<p class=Default style='line-height:150%'><b><i style='mso-bidi-font-style:
+normal'><font size=3 color=black face="Times New Roman"><span style='font-size:
+12.0pt;line-height:150%;font-weight:bold;font-style:italic;mso-bidi-font-style:
+normal'>Effect of Bigram: </span></font></i></b><i style='mso-bidi-font-style:
+normal'><span style='font-style:italic;mso-bidi-font-style:normal'><o:p></o:p></span></i></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%;mso-layout-grid-align:none;text-autospace:none'><font size=3
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'>Bigram uses a combination of two words
+as a feature. Bigram effectively captures some features in the data that
+unigram fails to capture. For example, words like &#8223;not sad&#8223;,
+&#8223;not good&#8223; clearly say that the sentiment is negative. This effect
+can be clearly seen from the increase in accuracy from 74.56(Unigram) to 76.44
+percent which is almost a 2% increase.<o:p></o:p></span></font></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%;mso-layout-grid-align:none;text-autospace:none'><font size=3
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></font></p>
+
+<p class=Default style='line-height:150%'><font size=3 color=black
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%'>The most
+informative features for Naive Bayes with Bigrams as features:</span></font></p>
+
+<p class=Default style='line-height:150%'><font size=3 color=black
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%'>('so',
+'sad') = <span style='mso-tab-count:1'>   </span>True <span class=SpellE>neg</span>
+:<span class=SpellE>pos</span> = 55.2 : 1.0 </span></font></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%;mso-layout-grid-align:none;text-autospace:none'><font size=3
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'>sad. = <span style='mso-tab-count:2'>             </span>True
+<span class=SpellE>neg</span> :<span class=SpellE>pos</span> = 44.2 : 1.0<o:p></o:p></span></font></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%;mso-layout-grid-align:none;text-autospace:none'><font size=3
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'>('<span class=SpellE>i</span>', 'lost')
+= <span style='mso-spacerun:yes'>     </span>True <span class=SpellE>neg</span>
+:<span class=SpellE>pos</span> = 24.7 : 1.0<o:p></o:p></span></font></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%;mso-layout-grid-align:none;text-autospace:none'><font size=3
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'>('miss', 'him') = True <span
+class=SpellE>neg</span> :<span class=SpellE>pos</span> = 24.1 : 1.0<o:p></o:p></span></font></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%;mso-layout-grid-align:none;text-autospace:none'><font size=3
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></font></p>
+
+<p class=Default style='line-height:150%'><b><i style='mso-bidi-font-style:
+normal'><font size=3 color=black face="Times New Roman"><span style='font-size:
+12.0pt;line-height:150%;font-weight:bold;font-style:italic;mso-bidi-font-style:
+normal'>Effect of using Trigram</span></font></i></b><i><span style='font-style:
+italic'>. </span></i><i style='mso-bidi-font-style:normal'><span
+style='font-style:italic;mso-bidi-font-style:normal'><o:p></o:p></span></i></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%;mso-layout-grid-align:none;text-autospace:none'><font size=3
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'>Running Naïve Bayes using Trigrams,
+bigrams and unigrams together gave an accuracy of 75.41 percent which is less
+than the accuracy obtained when Bigrams were used as a feature.<o:p></o:p></span></font></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%;mso-layout-grid-align:none;text-autospace:none'><font size=3
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'>Hence for further analysis, the trigrams
+are not considered as they do not have a notice able impact on the accuracy.<o:p></o:p></span></font></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%;mso-layout-grid-align:none;text-autospace:none'><font size=3
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></font></p>
+
+<p class=Default style='line-height:150%'><font size=3 color=black
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%'>The most
+informative features for Naive Bayes with Trigrams as features.:</span></font></p>
+
+<p class=Default style='line-height:150%'><font size=3 color=black
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%'>('so',
+'sad') = <span style='mso-tab-count:3'>                           </span>True <span
+class=SpellE>neg</span> :<span class=SpellE>pos</span> = 59.1 : 1.0 </span></font></p>
+
+<p class=Default style='line-height:150%'><font size=3 color=black
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%'>('lost',
+'my') = <span style='mso-tab-count:3'>                          </span>True <span
+class=SpellE>neg</span> :<span class=SpellE>pos</span> = 38.9 : 1.0 </span></font></p>
+
+<p class=Default style='line-height:150%'><font size=3 color=black
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%'>('<span
+class=SpellE>i</span>', 'miss', 'my') = <span style='mso-tab-count:2'>                    </span>True
+<span class=SpellE>neg</span> :<span class=SpellE>pos</span> = 36.9 : 1.0 </span></font></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%;mso-layout-grid-align:none;text-autospace:none'><font size=3
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'>('going', 'to', 'miss') = <span
+style='mso-tab-count:2'>              </span>True <span class=SpellE>neg</span>
+:<span class=SpellE>pos</span> = 28.5 : 1.0<o:p></o:p></span></font></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%;mso-layout-grid-align:none;text-autospace:none'><font size=3
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'>('happy', &quot;mother's&quot;, 'day') =
+<span style='mso-spacerun:yes'> </span>True <span class=SpellE>pos</span> :<span
+class=SpellE>neg</span> = 25.0 : 1.0<o:p></o:p></span></font></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%;mso-layout-grid-align:none;text-autospace:none'><font size=3
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></font></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%;mso-layout-grid-align:none;text-autospace:none'><a name="OLE_LINK17"></a><a
+name="OLE_LINK16"></a><a name="OLE_LINK15"><span style='mso-bookmark:OLE_LINK16'><span
+style='mso-bookmark:OLE_LINK17'><font size=3 face="Times New Roman"><span
+style='font-size:12.0pt;line-height:150%;font-family:"Times New Roman","serif"'>T<span
+style='mso-bidi-font-weight:bold'>able 2. Accuracy of Naive Bayes Algorithm</span><o:p></o:p></span></font></span></span></a></p>
+
+<span style='mso-bookmark:OLE_LINK17'></span><span style='mso-bookmark:OLE_LINK16'></span><span
+style='mso-bookmark:OLE_LINK15'></span>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%;mso-layout-grid-align:none;text-autospace:none'><font size=3
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></font></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%;mso-layout-grid-align:none;text-autospace:none'><font size=3
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman","serif";mso-fareast-language:EN-IN;mso-no-proof:
+yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_5" o:spid="_x0000_i1025"
+ type="#_x0000_t75" style='width:351.75pt;height:75.75pt;visibility:visible;
+ mso-wrap-style:square'>
+ <v:imagedata src="2019-01-08-Sentiment-Analysis-On-Twitter-Data_image002.png"
+  o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=469 height=101
+src="2019-01-08-Sentiment-Analysis-On-Twitter-Data_image002.png" v:shapes="Picture_x0020_5"><![endif]></span></font><font
+size=3 face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'><o:p></o:p></span></font></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%;mso-layout-grid-align:none;text-autospace:none'><b style='mso-bidi-font-weight:
+normal'><font size=3 face="Times New Roman"><span style='font-size:12.0pt;
+line-height:150%;font-family:"Times New Roman","serif";font-weight:bold;
+mso-bidi-font-weight:normal'>CONCLUSION<o:p></o:p></span></font></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%;mso-layout-grid-align:none;text-autospace:none'><font size=3
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'>In a survey conducted by [6], comparison
+of all approaches has showed that best results have been observed from machine
+learning approaches, and least by lexical approaches. However, without any
+proper training of a classifier in machine learning approach results may
+deteriorate drastically.<o:p></o:p></span></font></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%;mso-layout-grid-align:none;text-autospace:none'><font size=3
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></font></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%;mso-layout-grid-align:none;text-autospace:none'><font size=3
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'>We focused on Twitter as and have
+implemented the python program to implement sentimental analysis.<o:p></o:p></span></font></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%;mso-layout-grid-align:none;text-autospace:none'><font size=3
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></font></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%;mso-layout-grid-align:none;text-autospace:none'><font size=3
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'>Research results show that machine
+learning methods, such as SVM and naive Bayes have the highest accuracy and can
+be regarded as the baseline learning methods, while lexicon-based methods are
+very effective in some cases, which require little effort in human-labelled
+document.<o:p></o:p></span></font></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%;mso-layout-grid-align:none;text-autospace:none'><font size=3
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></font></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%'><b style='mso-bidi-font-weight:normal'><font size=3 color=black
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman","serif";mso-fareast-font-family:"Times New Roman";
+color:black;mso-fareast-language:EN-IN;font-weight:bold;mso-bidi-font-weight:
+normal'>APPENDIX<o:p></o:p></span></font></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%;mso-layout-grid-align:none;text-autospace:none'><font size=3
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'>Table 1: Negative and Positive sentiment
+score of Training data<o:p></o:p></span></font></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%;mso-layout-grid-align:none;text-autospace:none'><font size=3
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'>T<span style='mso-bidi-font-weight:bold'>able
+2. Accuracy of Naive Bayes Algorithm</span><o:p></o:p></span></font></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%;mso-layout-grid-align:none;text-autospace:none'><font size=3
+face="Times New Roman"><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></font></p>
+
+<p class=MsoNormal style='margin-bottom:12.0pt;line-height:150%;mso-outline-level:
+2'><b><font size=3 color=black face="Times New Roman"><span style='font-size:
+12.0pt;line-height:150%;font-family:"Times New Roman","serif";mso-fareast-font-family:
+"Times New Roman";color:black;mso-fareast-language:EN-IN;font-weight:bold'>REFERENCES<o:p></o:p></span></font></b></p>
+
+<div style='mso-element:para-border-div;border:none;border-bottom:solid windowtext 1.0pt;
+mso-border-bottom-alt:solid windowtext .75pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:150%;border:none;mso-border-bottom-alt:solid windowtext .75pt;
+padding:0cm;mso-padding-alt:0cm 0cm 1.0pt 0cm'><font size=1 face=Arial><span
+style='font-size:8.0pt;line-height:150%;font-family:"Arial","sans-serif";
+mso-fareast-font-family:"Times New Roman";display:none;mso-hide:all;mso-fareast-language:
+EN-IN'>Top of Form<o:p></o:p></span></font></p>
+
+</div>
+
+<div style='mso-element:para-border-div;border:none;border-top:solid windowtext 1.0pt;
+mso-border-top-alt:solid windowtext .75pt;padding:1.0pt 0cm 0cm 0cm'>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:150%;border:none;mso-border-top-alt:solid windowtext .75pt;
+padding:0cm;mso-padding-alt:1.0pt 0cm 0cm 0cm'><font size=1 face=Arial><span
+style='font-size:8.0pt;line-height:150%;font-family:"Arial","sans-serif";
+mso-fareast-font-family:"Times New Roman";display:none;mso-hide:all;mso-fareast-language:
+EN-IN'>Bottom of Form<o:p></o:p></span></font></p>
+
+</div>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%'><font size=2 color=black face=Georgia><span style='font-size:10.5pt;
+line-height:150%;font-family:"Georgia","serif";mso-fareast-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black;mso-fareast-language:EN-IN'>[1]
+H. <span class=SpellE>Bagheri</span> and M. J. Islam, “Twitter Sentiment
+Analysis”.<o:p></o:p></span></font></p>
+
+<div style='mso-element:para-border-div;border:none;border-bottom:solid windowtext 1.0pt;
+mso-border-bottom-alt:solid windowtext .75pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:150%;border:none;mso-border-bottom-alt:solid windowtext .75pt;
+padding:0cm;mso-padding-alt:0cm 0cm 1.0pt 0cm'><font size=1 face=Arial><span
+style='font-size:8.0pt;line-height:150%;font-family:"Arial","sans-serif";
+mso-fareast-font-family:"Times New Roman";display:none;mso-hide:all;mso-fareast-language:
+EN-IN'>Top of Form<o:p></o:p></span></font></p>
+
+</div>
+
+<div style='mso-element:para-border-div;border:none;border-top:solid windowtext 1.0pt;
+mso-border-top-alt:solid windowtext .75pt;padding:1.0pt 0cm 0cm 0cm'>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:150%;border:none;mso-border-top-alt:solid windowtext .75pt;
+padding:0cm;mso-padding-alt:1.0pt 0cm 0cm 0cm'><font size=1 face=Arial><span
+style='font-size:8.0pt;line-height:150%;font-family:"Arial","sans-serif";
+mso-fareast-font-family:"Times New Roman";display:none;mso-hide:all;mso-fareast-language:
+EN-IN'>Bottom of Form<o:p></o:p></span></font></p>
+
+</div>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%'><font size=2 color=black face=Georgia><span style='font-size:10.5pt;
+line-height:150%;font-family:"Georgia","serif";mso-fareast-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black;mso-fareast-language:EN-IN'>[2]
+M. Desai and M. A. Mehta, “A Hybrid Classification Algorithm to Classify
+Engineering Students Problems and Perks”, vol. 6, no. 2, pp. 73-81, Jan. 2016.<o:p></o:p></span></font></p>
+
+<div style='mso-element:para-border-div;border:none;border-bottom:solid windowtext 1.0pt;
+mso-border-bottom-alt:solid windowtext .75pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:150%;border:none;mso-border-bottom-alt:solid windowtext .75pt;
+padding:0cm;mso-padding-alt:0cm 0cm 1.0pt 0cm'><font size=1 face=Arial><span
+style='font-size:8.0pt;line-height:150%;font-family:"Arial","sans-serif";
+mso-fareast-font-family:"Times New Roman";display:none;mso-hide:all;mso-fareast-language:
+EN-IN'>Top of Form<o:p></o:p></span></font></p>
+
+</div>
+
+<div style='mso-element:para-border-div;border:none;border-top:solid windowtext 1.0pt;
+mso-border-top-alt:solid windowtext .75pt;padding:1.0pt 0cm 0cm 0cm'>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:150%;border:none;mso-border-top-alt:solid windowtext .75pt;
+padding:0cm;mso-padding-alt:1.0pt 0cm 0cm 0cm'><font size=1 face=Arial><span
+style='font-size:8.0pt;line-height:150%;font-family:"Arial","sans-serif";
+mso-fareast-font-family:"Times New Roman";display:none;mso-hide:all;mso-fareast-language:
+EN-IN'>Bottom of Form<o:p></o:p></span></font></p>
+
+</div>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%'><font size=2 color=black face=Georgia><span style='font-size:10.5pt;
+line-height:150%;font-family:"Georgia","serif";mso-fareast-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black;mso-fareast-language:EN-IN'>[3]
+G. <span class=SpellE>Gautam</span> and D. Yadav, “Sentiment analysis of
+twitter data using machine learning approaches and semantic analysis”, Jan.
+2014.<o:p></o:p></span></font></p>
+
+<div style='mso-element:para-border-div;border:none;border-bottom:solid windowtext 1.0pt;
+mso-border-bottom-alt:solid windowtext .75pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:150%;border:none;mso-border-bottom-alt:solid windowtext .75pt;
+padding:0cm;mso-padding-alt:0cm 0cm 1.0pt 0cm'><font size=1 face=Arial><span
+style='font-size:8.0pt;line-height:150%;font-family:"Arial","sans-serif";
+mso-fareast-font-family:"Times New Roman";display:none;mso-hide:all;mso-fareast-language:
+EN-IN'>Top of Form<o:p></o:p></span></font></p>
+
+</div>
+
+<div style='mso-element:para-border-div;border:none;border-top:solid windowtext 1.0pt;
+mso-border-top-alt:solid windowtext .75pt;padding:1.0pt 0cm 0cm 0cm'>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:150%;border:none;mso-border-top-alt:solid windowtext .75pt;
+padding:0cm;mso-padding-alt:1.0pt 0cm 0cm 0cm'><font size=1 face=Arial><span
+style='font-size:8.0pt;line-height:150%;font-family:"Arial","sans-serif";
+mso-fareast-font-family:"Times New Roman";display:none;mso-hide:all;mso-fareast-language:
+EN-IN'>Bottom of Form<o:p></o:p></span></font></p>
+
+</div>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%'><font size=2 color=black face=Georgia><span style='font-size:10.5pt;
+line-height:150%;font-family:"Georgia","serif";mso-fareast-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black;mso-fareast-language:EN-IN'>[4]
+“Feature Extraction for Sentiment Classification on Twitter Data”, vol. 5, no.
+2, pp. 2183-2189, Jan. 2016.<o:p></o:p></span></font></p>
+
+<div style='mso-element:para-border-div;border:none;border-bottom:solid windowtext 1.0pt;
+mso-border-bottom-alt:solid windowtext .75pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:150%;border:none;mso-border-bottom-alt:solid windowtext .75pt;
+padding:0cm;mso-padding-alt:0cm 0cm 1.0pt 0cm'><font size=1 face=Arial><span
+style='font-size:8.0pt;line-height:150%;font-family:"Arial","sans-serif";
+mso-fareast-font-family:"Times New Roman";display:none;mso-hide:all;mso-fareast-language:
+EN-IN'>Top of Form<o:p></o:p></span></font></p>
+
+</div>
+
+<div style='mso-element:para-border-div;border:none;border-top:solid windowtext 1.0pt;
+mso-border-top-alt:solid windowtext .75pt;padding:1.0pt 0cm 0cm 0cm'>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:150%;border:none;mso-border-top-alt:solid windowtext .75pt;
+padding:0cm;mso-padding-alt:1.0pt 0cm 0cm 0cm'><font size=1 face=Arial><span
+style='font-size:8.0pt;line-height:150%;font-family:"Arial","sans-serif";
+mso-fareast-font-family:"Times New Roman";display:none;mso-hide:all;mso-fareast-language:
+EN-IN'>Bottom of Form<o:p></o:p></span></font></p>
+
+</div>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%'><font size=2 color=black face=Georgia><span style='font-size:10.5pt;
+line-height:150%;font-family:"Georgia","serif";mso-fareast-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black;mso-fareast-language:EN-IN'>[5]
+M. <span class=SpellE>Karanasou</span>, A. <span class=SpellE>Ampla</span>, C. <span
+class=SpellE>Doulkeridis</span>, and M. <span class=SpellE>Halkidi</span>,
+“Scalable and Real-Time Sentiment Analysis of Twitter Data”, Jan. 2016.<o:p></o:p></span></font></p>
+
+<div style='mso-element:para-border-div;border:none;border-bottom:solid windowtext 1.0pt;
+mso-border-bottom-alt:solid windowtext .75pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:150%;border:none;mso-border-bottom-alt:solid windowtext .75pt;
+padding:0cm;mso-padding-alt:0cm 0cm 1.0pt 0cm'><font size=1 face=Arial><span
+style='font-size:8.0pt;line-height:150%;font-family:"Arial","sans-serif";
+mso-fareast-font-family:"Times New Roman";display:none;mso-hide:all;mso-fareast-language:
+EN-IN'>Top of Form<o:p></o:p></span></font></p>
+
+</div>
+
+<div style='mso-element:para-border-div;border:none;border-top:solid windowtext 1.0pt;
+mso-border-top-alt:solid windowtext .75pt;padding:1.0pt 0cm 0cm 0cm'>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:150%;border:none;mso-border-top-alt:solid windowtext .75pt;
+padding:0cm;mso-padding-alt:1.0pt 0cm 0cm 0cm'><font size=1 face=Arial><span
+style='font-size:8.0pt;line-height:150%;font-family:"Arial","sans-serif";
+mso-fareast-font-family:"Times New Roman";display:none;mso-hide:all;mso-fareast-language:
+EN-IN'>Bottom of Form<o:p></o:p></span></font></p>
+
+</div>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%'><font size=2 color=black face=Georgia><span style='font-size:10.5pt;
+line-height:150%;font-family:"Georgia","serif";mso-fareast-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black;mso-fareast-language:EN-IN'>[6]
+V. A. and S. <span class=SpellE>Sonawane</span>, “Sentiment Analysis of Twitter
+Data: A Survey of Techniques”, vol. 139, no. 11, pp. 5-15.<o:p></o:p></span></font></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%'><font size=2 color=black face=Georgia><span style='font-size:10.5pt;
+line-height:150%;font-family:"Georgia","serif";mso-fareast-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black;mso-fareast-language:EN-IN'><o:p>&nbsp;</o:p></span></font></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%'><font size=2 color=black face=Georgia><span style='font-size:10.5pt;
+line-height:150%;font-family:"Georgia","serif";mso-fareast-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black;mso-fareast-language:EN-IN'><o:p>&nbsp;</o:p></span></font></p>
+
+</div>
+
+</body>
+
+</html>
