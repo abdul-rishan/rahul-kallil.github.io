@@ -4,12 +4,15 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Hello World! This is Rahul Kallil
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+I'm a Python Freelancer and a 1st year postgraduate student currently studying at University of Mumbai and majoring in Information Technology. Actively looking for internship opportunities in IT, Computers, Software services companies. Working to reinvent healthcare after postgragraduation
+My favourite passtime include watching Netflix and playing Laptop games. .
+
+The services I offer as a freelancer:
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[rahulkallil2@gmail.com](mailto:email@domain.com)
