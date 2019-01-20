@@ -4,7 +4,6 @@ title: About
 permalink: /about/
 ---
 
-<a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
 Hello World! This is Rahul Kallil
 
 ### More Information
